@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Transcription</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Audio Transcription App</h1>
+    <div id="drop-area" class="drag-drop-area">
+      <p>Drag and Drop MP3/WAV files here or Click to Upload</p>
+      <input type="file" id="file-input" accept=".mp3, .wav" hidden>
+    </div>
+    <button id="mic-button" class="mic-btn">
+      <span>🎤</span> Use Microphone
+    </button>
+    <button id="convert-button" class="convert-btn">Convert</button>
+    <button id="download-button" disabled>Download Recording</button> <!-- New download button -->
+
+    <!-- Progress Bar -->
+    <div id="progress-container" class="progress-container">
+      <div id="progress-bar" class="progress-bar"></div>
+    </div>
+
+    <textarea id="transcription-text" placeholder="Transcription will appear here..." readonly></textarea>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
