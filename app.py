@@ -4,7 +4,7 @@ import os
 from flask_cors import CORS  # Import CORS support
 
 # Set your AssemblyAI API key
-aai.settings.api_key = "2932c0510296431584ab8d3750b1c7c5"
+aai.settings.api_key = "your api key"
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS support for all routes
